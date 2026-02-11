@@ -10,7 +10,7 @@
     |  /                            /
     \_/____________________________/
 -->
-<img src="./src/assets/images/logo/logo256.png" height="128" align="left" valign="top"
+<img src="./public/assets/images/logo/logo.png" height="128" align="left" valign="top"
   alt="templateWebApp" />
 <br>
 <b>templateWebApp</b><br>
@@ -22,9 +22,8 @@ https://rg3h.github.io/templateWebApp</a>
 </sub></sup>
 <br>
 
-Contains structures, scripts, server, and examples to quickly create a
-web app.  Includes css to layout on mobile devices in different
-orientations.
+Contains structures, scripts, server, and examples to create a
+web app.
 
 <br>
 <br>
