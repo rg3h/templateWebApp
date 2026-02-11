@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- index.html -->
+<html lang="en">
+<head>
+<!--_____________________________     _                       _       _
+ / \                             \   | |_ ___ _ __ ___  _ __ | | __ _| |_ ___
+|   |                            |   | __/ _ \ '_ ` _ \| '_ \| |/ _` | __/ _ \
+ \_ |                            |   | ||  __/ | | | | | |_) | | (_| | ||  __/
+    |                            |    \__\___|_| |_| |_| .__/|_|\__,_|\__\___|
+    |                            |                     |_|
+    |                            |   HTML/CSS/JS project templateWebApp
+    |  __________________________|__
+    |  \                            \
+    |  /                            /
+    \_/____________________________/
+-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>templateWebApp</title>
+  <meta name="description" content="templateWebApp"/>
+  <meta name="mobile-web-app-capable"       content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="msapplication-tap-highlight"  content="no"  />
+  <meta name="description"                  content="templateWebApp"/>
+  <meta name="theme-color"                  content="#FFCCCC">
+  <meta property="og:title"                 content="templateWebApp">
+  <meta property="og:description"           content="templateWebApp">
+  <meta property="og:image"       content="./assets/images/logo/logo.png">
+  <meta property="og:url"         content="www.templateWebApp.com">
+
+  <link rel="apple-touch-icon" href="./assets/images/logo/logo.png"/>
+  <link rel="icon"             href="./assets/images/logo/logo.png"/>
+  <link rel="stylesheet"       href="./assets/fonts/monaSans/monaSans.css"/>
+  <link rel="stylesheet"       href="./modules/default/reset.css"/>
+  <link rel="stylesheet"       href="./modules/color/color.css"/>
+  <link rel="stylesheet"       href="./modules/default/default.css"/>
+  <link rel="stylesheet"       href="./index.css"/>
+  <script type="module"        src="./modules/default/main.js"></script>
+</head>
+
+<body>
+  <div class="middle">
+  <div class="titleContainer">
+    <div class="titleLeft">
+      <img class="titleImg" src="./assets/images/logo/logo.png" alt="logo" />
+    </div>
+    <div class="titleMiddle">
+      <div class="titleText">templateWebApp</div>
+      <div class="subTitle">
+        HTML, CSS, JS project template
+        <br>
+        <span class="titleVersion">version goes here</span>
+        <br>
+        <a href="https://[githubUserid].github.io/[repoName]/index.html">
+          https://[githubUserid].github.io/[repoName]/index.html</a>
+      </div>
+    </div>
+    <div class="titleRight">
+      <div class="titleDate"></div>
+    </div>
+  </div> <!-- titleContainer -->
+
+TemplateWebApp provides a skeleton structure for a web applicatrion.
+  It contains a directory structure with HTML, CSS, JS, development
+  tool scripts, and a local node server.
+
+<pre class="directoryBox">
+  aaa_notForProject..............where non-essential files are kept
+  public.........................the root of the web app
+    assets
+      fonts
+        monaSans.................a sans serif variable font and css file
+      images
+    modules
+      anim.......................animation css
+      color......................color tools and css
+      date.......................date tools
+      default....................reset.css default.css main.js (app entry point)
+      event......................wrapper to dispatch and handle custom events
+      html.......................js to manipulate the DOM
+      util.......................utility functions
+      index.html.................main app page
+      404.html...................on error this is shown
+    tools........................development tools (lint, server, etc)
+</pre>
+
+<h3>Installation and Use</h3>
+<ol>
+  <li> clone the templateWebApp repository or download the zip file</li>
+  <li>
+    (optional) install <a href="https://nodejs.org">node</a> if you
+    want to run the provided local server/simpleServer.js
+  </li>
+  <li>run a local server such as: <code>tools/runSimpleServer.bat</code></li>
+</ol>
+  </div> <!-- middle -->
+</body>
+</html>
