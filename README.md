@@ -22,7 +22,7 @@ https://rg3h.github.io/templateWebApp</a>
 </sub></sup>
 <br>
 
-Contains structures, scripts, server, and examples to create a
+Contains structures, scripts, a server, and examples to create a
 web app.
 
 <br>
