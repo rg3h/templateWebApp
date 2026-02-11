@@ -28,4 +28,4 @@ web app.
 <br>
 <br>
 Since github's markdown is limited, check out
-<a href="./piblic/index.html">public/index.html</a> for more.
+<a href="./public/index.html">public/index.html</a> for more.
