@@ -22,8 +22,9 @@ https://rg3h.github.io/templateWebApp</a>
 </sub></sup>
 <br>
 
-Contains structures, scripts, a server, and examples to create a
-web app.
+TemplateWebApp provides a skeleton structure for a web applicatrion.
+It contains a directory structure with HTML, CSS, JS, development tool
+scripts, and a local node server.
 
 <br>
 <br>
@@ -53,5 +54,3 @@ web app.
   <li>(optional) install node if you want to run the provided local server/simpleServer.js</li>
   <li>run a local server such as: tools/runSimpleServer.bat</li>
 </ol>
-
-
