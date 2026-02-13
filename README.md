@@ -14,7 +14,7 @@
   alt="templateWebApp" />
 <b>templateWebApp</b><br>
 <sup><sub>
-HTML/CSS/JS project templateWebApp
+HTML/CSS/JS project template
 &nbsp;&nbsp;
 <a href="https://rg3h.github.io/templateWebApp/index.html">
 https://rg3h.github.io/templateWebApp</a>
