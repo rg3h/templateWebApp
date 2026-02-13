@@ -2,5 +2,5 @@
 @echo off
 clear
 setlocal
-start node ./server/simpleServer.js --webroot "../../public/"
+start "simpleServer" cmd /t:1f /k "node ./server/simpleServer.js --webroot ../../public/"
 endlocal
