@@ -22,19 +22,24 @@ https://rg3h.github.io/templateWebApp</a>
 </sub></sup>
 <br>
 
-TemplateWebApp provides a skeleton structure for a web applicatrion.
-It contains a directory structure with HTML, CSS, JS, development tool
-scripts, and a local node server.
+TemplateWebApp provides a very basic skeleton structure for a web applicatrion that I can evolve over time.
+It contains a directory structure with HTML, CSS, JS, development tool scripts, and a local node server.
+<br><br>
+I use this as a starting point for a new prototype or idea when I don't need a full-blown system.
+It works well locally with a local server (included) as well as for a new website or git/github project.
 
-<br>
-<br>
-<pre>
+<h3>Directory Structure</h3>
+<table><tr><td><pre>
   aaa_notForProject..............where non-essential files are kept
+   notes.txt.....................notes on what I need to do with the project
+   .gitignore....................example (installed globally so each project does not need one)
   public.........................the root of the web app
     assets
       fonts
-        monaSans.................a sans serif variable font and css file
+        monaSans.................example -- a sans serif variable font and css file
       images
+        logo
+          logo.png...............logo for the project/website
     modules
       anim.......................animation css
       color......................color tools and css
@@ -46,11 +51,29 @@ scripts, and a local node server.
       index.html.................main app page
       404.html...................on error this is shown
     tools........................development tools (lint, server, etc)
-</pre>
+      runServer.bat..............simple bat command to run the local server
+      server.....................simple node server supporting https for local testing
+</pre></td></tr></table>
 
-<h2>Installation and Use</h2>
+<h3>Installation and Use</h3>
 <ol>
-  <li>clone the templateWebApp repository or download the zip file</li>
-  <li>(optional) install node if you want to run the provided local server/simpleServer.js</li>
+  <li>download the templateWebApp repository zip (under the github CODE button)</li>
+  <li>(optional) install node if you want to run the provided local server</li>
   <li>run a local server such as: tools/runSimpleServer.bat</li>
+  <li>open your browser to https://localhost:8000</li>
+  <li>replace all occurances of "templateWebApp" with your project name</li>
+  <li>consider using git/github and cloudflare to host your project (I have docs on how to do that)</li>
 </ol>
+
+<h3>TODOs, Nice-To-Haves, Future Work</h3>
+<ul>
+ <li>create additional, modular, useful template components:
+   <ul>
+     <li>a build script (node or sh)</li>
+     <li>eslint, unit/integration testing, concat, tree-shaking</li>
+     <li>logging, encryption, databases</li>
+     <li>vanilla html, css, and js modules (e.g. date, dom, math, stats...)</li>
+    </ul>
+  </li>
+  <li>add links and notes to related items (using git, creating a website on cloudflare...)</li>
+</ul>
