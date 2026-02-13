@@ -12,7 +12,6 @@
 -->
 <img src="./public/assets/images/logo/logo.png" height="128" align="left" valign="top"
   alt="templateWebApp" />
-<br>
 <b>templateWebApp</b><br>
 <sup><sub>
 HTML/CSS/JS project templateWebApp
