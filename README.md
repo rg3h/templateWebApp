@@ -73,6 +73,7 @@ It works well locally with a local server (included) as well as for a new websit
      <li>eslint, unit/integration testing, concat, tree-shaking</li>
      <li>logging, encryption, databases</li>
      <li>vanilla html, css, and js modules (e.g. date, dom, math, stats...)</li>
+     <li>css module for handling mobile devices</li>
     </ul>
   </li>
   <li>add links and notes to related items (using git, creating a website on cloudflare...)</li>
