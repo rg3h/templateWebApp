@@ -22,11 +22,11 @@ https://rg3h.github.io/templateWebApp</a>
 </sub></sup>
 <br>
 
-TemplateWebApp provides a very basic skeleton structure for a web applicatrion that I can evolve over time.
-It contains a directory structure with HTML, CSS, JS, development tool scripts, and a local node server.
+TemplateWebApp provides a very basic skeleton structure for a web app that I can evolve over time.
+It contains a directory structure, dev tool scripts, and a local node server.
 <br><br>
 I use this as a starting point for a new prototype or idea when I don't need a full-blown system.
-It works well locally with a local server (included) as well as for a new website or git/github project.
+It works well on your local machine with the included node server as well as for a new website or git/github project.
 
 <h3>Directory Structure</h3>
 <table><tr><td><pre>
