@@ -1,7 +1,8 @@
 /** 404.css **/
-body {
+.middle {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
