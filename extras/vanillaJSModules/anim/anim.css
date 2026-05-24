@@ -1,0 +1,5 @@
+/** anim.css  **/
+/** usage:   animation: fadeUpAnim 0.5s ease-in-out 0.25s forwards; **/
+
+@keyframes fadeUpAnim {  0% {opacity: 0;} 100% {opacity: 1;} }
+@keyframes focusAnim  {  0% {filter: blur(10px);} 100% {filter: blur(0px);} }

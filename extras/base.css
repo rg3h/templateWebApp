@@ -1,0 +1,77 @@
+/** reset.css -- resets css for a clean foundation **/
+
+/* box-sizing: border-box for all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* prevent font size inflation on mobile */
+html {
+  -moz-text-size-adjust: 100%;    /* firefox */
+  -ms-text-size-adjust: 100%;     /* older internet explorer/edge */
+  -webkit-text-size-adjust: 100%; /* chrome, safari, newer edge */
+  text-size-adjust: 100%;         /* standard property */
+}
+
+/* remove default margins (except dialog for centering) */
+:not(dialog) {
+  margin: 0;
+}
+
+/* better typography */
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-height: 100svh;
+  text-rendering: optimizelegibility;
+}
+
+
+/* balanced text wrapping for headers */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* media elements: responsive and block-level */
+img, picture, video, canvas, svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* inherit fonts in form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* ensure textareas have a usable height */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* remove list styles only for semantic lists */
+ul[role="list"], ol[role="list"] {
+  list-style: none;
+  padding-inline-start: 0; /* logical property for rtl */
+}
+
+/* anchors get extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* isolation for root */
+#root, #__next {
+  isolation: isolate;
+}
+
+/* enable smooth size interpolations for animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {scroll-behavior: smooth;}
+}

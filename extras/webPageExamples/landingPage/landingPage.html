@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- landingPage.html -->
+<html lang="en">
+<head>
+<!--_____________________     _                       _       _
+ / \                     \   | |_ ___ _ __ ___  _ __ | | __ _| |_ ___
+|   |                    |   | __/ _ \ '_ ` _ \| '_ \| |/ _` | __/ _ \
+ \_ |                    |   | ||  __/ | | | | | |_) | | (_| | ||  __/
+    |                    |    \__\___|_| |_| |_| .__/|_|\__,_|\__\___|
+    |                    |                     |_|
+    |                    |
+    |  __________________|__    project {{projectTitle}}
+    |  \                    \
+    |  /                    /
+    \_/____________________/
+-->
+  <meta charset="utf-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>{{projectTitle}}</title>
+  <meta name="description"                  content="{{projectDescription}}"/>
+  <meta name="mobile-web-app-capable"       content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="msapplication-tap-highlight"  content="no"  />
+  <meta name="description"                  content="{{projectDescription}}"/>
+  <meta name="theme-color"                  content="#EFF4FF"/>
+  <meta property="og:title"                 content="{{projectTitle}}"/>
+  <meta property="og:description"           content="{{projectDescription}}"/>
+  <meta property="og:image"                 content="./assets/images/logo.png"/>
+  <meta property="og:url"                   content="{{projectUrl}}"/>
+
+  <link rel="apple-touch-icon" href="./assets/images/logo.png"/>
+  <link rel="icon"             href="./assets/images/logo.png"/>
+  <link rel="preload" as="font" crossorigin="anonymous" type="font/woff2"
+        href="./assets/fonts/monaSans/monaSans.woff2"/> <!--preload for speed-->
+  <link rel="stylesheet"       href="./assets/fonts/monaSans/monaSans.css"/>
+  <link rel="stylesheet"       href="./modules/base.css"/> <!--reset & common-->
+  <link rel="stylesheet"       href="./landingPage.css"/>  <!--page specific-->
+  <script type="module"        src="./landingPage.js"></script>
+</head>
+
+<body>
+  <div class=topSection>
+    <div class=topLeftSection>
+      <div class=topLeftSectionLogo>
+        <img src="./assets/images/logo.png" alt=logo/>
+      </div>
+    </div>
+    <div class="topCenterSection"></div>
+    <div class="topRightSection">
+      <a class=blueButton
+         href="www.example.com/download.html" download>Download</a>
+    </div>
+  </div>
+
+  <div class=middleSection>
+    <div class=pageSection>
+      <div class=pageSectionTitleContainer>
+        <div class=pageSectionTitleAndVersionSection>
+          <div class=pageSectionTitle>{{projectTitle}}</div>
+          <div class=pageSectionVersion>{{projectVersion}}</div>
+        </div>
+        <div class="pageSectionSubTitle">{{projectSubTitle}}</div>
+      </div>
+    </div>  <!-- pageSection -->
+  </div> <!-- middleSection -->
+
+  <div class=bottomSection>
+    <div class="bottomLeftSection">bottomSectionLeft</div>
+    <div class="bottomCenterSection">bottomSectionCenter</div>
+    <div class="bottomRightSection">bottomSectionRight</div>
+  </div>
+</body>
+</html>

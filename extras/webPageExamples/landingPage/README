@@ -1,0 +1,6 @@
+landingPage README
+===============
+
+This webpage uses the full browser width.
+
+Move it up to public/ and rename everything from landingPage.* to index.*

@@ -1,0 +1,7 @@
+paperPage README
+================
+
+This webpage looks like a piece of paper -- a white sheet that does
+not get wider if you make the browser wider.
+
+Move it up to public/ and rename everything from paperPage.* to index.*
