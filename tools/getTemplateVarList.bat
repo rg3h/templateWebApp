@@ -6,6 +6,6 @@ setlocal
 :: %~d0 is the drive and %~p0 is the code's directory
 :: pushd works for UNC paths (\\server\...) cd does not
 pushd %~d0%~p0getTemplateVarList
-cmd /k node .
+cmd /c node .
 
 endlocal

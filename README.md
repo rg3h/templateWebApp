@@ -24,7 +24,7 @@
     <br>
     This is a template for creating a new web app project.
      <br>
-    You can replace all of the {{vars}} to customize it.
+    You can replace all of the &#123;&#123;vars&#125;&#125; to customize it.
      <br>
     Consider using the github
     <a href="https://github.com/rg3h/projectMaker">projectMaker</a> which
