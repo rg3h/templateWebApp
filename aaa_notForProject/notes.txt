@@ -14,12 +14,9 @@
     \_/____________________/
 -->
 Put your project notes here.
+ascii art can be done here: https://www.asciiart.eu/text-to-ascii-art
 
 ----------------------------------------------------------------------
 TODO
   fix modules/date/date.js to use temporal
-  where is aaa_notForProject
-----------------------------------------------------------------------
-https://www.asciiart.eu/text-to-ascii-art
-https://www.asciiart.eu/image-to-ascii
 ----------------------------------------------------------------------

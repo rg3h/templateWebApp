@@ -4,6 +4,4 @@
 #.gitignore
 #tools
 #extras
-
-#include the notes (global .gitignore set to ignore aaa_notForProject)
-!aaa_notForProject/notes.txt
+#!aaa_notForProject/notes.txt
