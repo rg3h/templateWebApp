@@ -14,9 +14,11 @@
     \_/____________________/
 -->
 Put your project notes here.
-ascii art can be done here: https://www.asciiart.eu/text-to-ascii-art
+ascii text and art: https://www.asciiart.eu/text-to-ascii-art
+(I often use standard or stick letters)
 
 ----------------------------------------------------------------------
 TODO
+  template and json {{varName,default,question}}
   fix modules/date/date.js to use temporal
 ----------------------------------------------------------------------
