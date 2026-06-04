@@ -16,7 +16,7 @@ const REG_PORT    = 8001;
 let ipAddressList = [];
 
 // eslint-disable-next-line no-undef
-let webRoot = frontSlash(pathObj.normalize(__dirname + '/'));
+let webRoot = frontSlash(pathObj.resolve(__dirname + '/'));
 main();
 
 
@@ -64,7 +64,8 @@ function processArgs() {
       // eslint-disable-next-line no-undef
       param = process.argv[++i] || ''; // get next param as the webroot
       // eslint-disable-next-line no-undef
-      webRoot = frontSlash(pathObj.normalize(param + '/'));
+      // webRoot = frontSlash(pathObj.normalize(param + '/'));
+      webRoot = frontSlash(pathObj.resolve(param + '/'));
       break;
     }
   }
@@ -237,9 +238,6 @@ function handleFileRequest(fileName, paramObj, response) {
     status = readTheFile(pathName);
   }
 
-  // let shortPath = pathName;
-  // shortPath = shortPath.replace("C:/rcg/src/projects", "...");
-  // shortPath = shortPath.replace("dev/client", "...");
   if (status.err) {
     const msg = ['error reading', pathName, status.msg].join(' ');
     console.error(msg);
