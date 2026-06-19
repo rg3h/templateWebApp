@@ -12,30 +12,30 @@
     \_/____________________/
 */
 body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  align-items:     center;
+  display:         flex;
+  flex-direction:  column;
+  height:          100%;
   justify-content: center;
 }
 
 .middle {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  align-items:     center;
+  display:         flex;
+  flex-direction:  column;
+  height:          100%;
   justify-content: center;
 }
 
 .errorTitle {
-  font-family: Impact, Charcoal, sans-serif;
-  font-size: 8rem;
+  font-family:     Impact, Charcoal, sans-serif;
+  font-size:       8rem;
 }
 
 .errorMsg {
 }
 
 .titleDate {
-  font-size: 0.75rem;
-  margin-top: 2rem;
+  font-size:       0.75rem;
+  margin-top:      2rem;
 }
