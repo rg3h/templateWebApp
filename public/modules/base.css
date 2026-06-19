@@ -152,11 +152,12 @@ pre {
   white-space:pre-wrap;       /* preserves whitespace and wraps naturally */
 }
 
-button, .button, .blueButton {
+button, .button, .blueButton, .greenButton {
   background-color: rgb(200, 200, 200);
   border-radius: 0.5rem;
   border: none;
   color: black;
+  cursor: pointer;
   flex-grow: 0;
   flex-shrink: 0;
   font-size: 1rem;
@@ -182,6 +183,17 @@ button:hover, .button:hover {
 .blueButton:hover {
   background-color: rgb(0, 90, 255);
   border: none;
+  color: white;
+}
+
+.greenButton {
+  background-color: green;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  color: white;
+}
+
+.greenButton:hover {
+  background-color: rgb(0, 150, 50);
   color: white;
 }
 

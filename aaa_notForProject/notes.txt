@@ -19,6 +19,6 @@ ascii text and art: https://www.asciiart.eu/text-to-ascii-art
 
 ----------------------------------------------------------------------
 TODO
-  template and json {{varName,default,question}}
+  template and json \{{varName,default,question}\}
   fix modules/date/date.js to use temporal
 ----------------------------------------------------------------------
