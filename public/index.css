@@ -20,6 +20,14 @@ body {
   overflow:                   hidden;
 }
 
+.pre {
+  display:                    block;
+  font-family:                "Courier New", monospace;
+  font-size:                  0.9rem;
+  unicode-bidi:               embed;
+  //  white-space:            pre;
+}
+
 .pageTopCap {
   background:                 rgb(253, 250, 250);
   border-left:                var(--border);

@@ -16,6 +16,7 @@ export {
   getFirstTextNode,
   insertAsFirst,
   setText,
+  waitForImgToLoad,
 };
 
 
@@ -57,9 +58,9 @@ export {
 }
 
 
-/*export*/ function createDiv (parent, opt_classNameOrList, text) {
+/*export*/ function createDiv (parent, opt_classNameOrList, opt_text) {
   let element = createElement('div', parent, opt_classNameOrList);
-  text ? setText(element, text) : null;
+  opt_text ? setText(element, opt_text) : null;
   return element;
 }
 
@@ -73,18 +74,36 @@ export {
 
 
 /*export*/ function createImg (parent, classNameOrList, url, waitForIt=false) {
-  if (waitForIt) {
+  let element = createElement('img', parent, classNameOrList);
+
+  if (waitForIt && url) {
     return new Promise((resolve, reject) => {
-      let element = createElement('img', parent, classNameOrList);
       element.onload = () => resolve(element);
       element.onerror = reject;
       element.src = url;
     });
   } else {
-    let element = createElement('img', parent, classNameOrList);
-    element.src = url;
+    url ? element.src = url : null;
     return element;
   }
+}
+
+// load an image's source url and wait for it
+// usage: await waitForImgToLoad(imgEle, 'someImage.jpg');
+/*export*/ function waitForImgToLoad (imgEle, url) {
+  if (!imgEle) {
+    return null;
+  }
+
+  if (!url) {
+    return imgEle;
+  }
+
+  return new Promise((resolve, reject) => {
+      imgEle.onload = () => resolve(imgEle);
+      imgEle.onerror = reject;
+      imgEle.src = url;
+    });
 }
 
 
