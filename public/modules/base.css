@@ -1,7 +1,5 @@
 /** base.css -- resets css and has css common to all pages**/
 
-/********** reset **********/
-
 /* box-sizing: border-box for all elements */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -86,231 +84,235 @@ ul[role="list"], ol[role="list"] {
 @keyframes fadeUpAnim {0% {opacity: 0;} 100% {opacity: 1;}}
 
 :root {
-  --fadeUpAnim:            fadeUpAnim 0.5s ease-in-out 0.25s forwards;
-  --bgColor:               var(--extraLightBlue);
-  --fgColor:               black;
-  --accentColor:           var(--steelBlue);
-  --regFont:               monaSans;
-  --boldFont:              monaSansBold;
-  --lightFont:             monaSansLight;
-  --extraLightFont:        monaSansExtraLight;
-  --border:                solid 1px rgb(200, 200, 200);
-  --borderRadius:          1rem;
+  --fadeUpAnim:               fadeUpAnim 0.5s ease-in-out 0.25s forwards;
+  --bgColor:                  var(--extraLightBlue);
+  --fgColor:                  black;
+  --accentColor:              var(--steelBlue);
+  --regFont:                  monaSans;
+  --boldFont:                 monaSansBold;
+  --lightFont:                monaSansLight;
+  --extraLightFont:           monaSansExtraLight;
+  --border:                   solid 1px rgb(200, 200, 200);
+  --borderRadius:             1rem;
 
-  --extraLightBlue:        rgb(240, 245, 255);
-  --blue:                  rgb(  0,  90, 255);
-  --steelBlue:             rgb( 10, 100, 190);
+  --extraLightBlue:           rgb(240, 245, 255);
+  --blue:                     rgb(  0,  90, 255);
+  --steelBlue:                rgb( 10, 100, 190);
 }
 
 html {
-  height:           100%;
-  margin:           0;
-  min-height:       100%;
-  min-width:        100%;
-  padding:          0;
-  width:            100%;
+  height:                     100%;
+  margin:                     0;
+  min-height:                 100%;
+  min-width:                  100%;
+  padding:                    0;
+  width:                      100%;
 }
 
 body {
-  animation:        var(--fadeUpAnim);
-  background-color: var(--bgColor);
-  color:            var(--fgColor);
-  font-family:      var(--regFont);
-  font-size:        15px;
-  height:           100%;
-  margin:           0;
-  max-height:       100%;
-  min-height:       100%;
-  min-width:        100%;
-  opacity:          0;
-  padding:          0;
-  width:            100%;
+  animation:                  var(--fadeUpAnim);
+  background-color:           var(--bgColor);
+  color:                      var(--fgColor);
+  font-family:                var(--regFont);
+  font-size:                  15px;
+  height:                     100%;
+  margin:                     0;
+  max-height:                 100%;
+  min-height:                 100%;
+  min-width:                  100%;
+  opacity:                    0;
+  padding:                    0;
+  width:                      100%;
 }
 
 /* anchor */
 a {
-  box-shadow: 0px 5px 5px transparent;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.33rem;
-  transition-duration: 0.2s;
-  transition-property: color, box-shadow;
+  box-shadow:                 0px 5px 5px transparent;
+  text-decoration-thickness:  1px;
+  text-underline-offset:      0.33rem;
+  transition-duration:        0.2s;
+  transition-property:        color, box-shadow;
   transition-timing-function: ease-in-out;
-  width: fit-content;
+  width:                      fit-content;
 }
 
 a:hover {
-  color: rgb(65, 60, 255);
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
+  color:                      rgb(65, 60, 255);
+  box-shadow:                 0px 5px 5px rgba(0, 0, 0, 0.25);
+  text-decoration:            underline;
+  text-decoration-thickness:  2px;
 }
 
 pre {
-  font-size: 0.9rem;
-  line-height: 1.2rem;
-  overflow-wrap: break-word;  /* breaks long words preventing x-overflow */
-  white-space:pre-wrap;       /* preserves whitespace and wraps naturally */
+  font-size:                  0.9rem;
+  line-height:                1.2rem;
+  overflow-wrap:              break-word;
+  white-space:                pre-wrap;
 }
 
 button, .button, .blueButton, .greenButton {
-  background-color: rgb(200, 200, 200);
-  border-radius: 0.5rem;
-  border: none;
-  color: black;
-  cursor: pointer;
-  flex-grow: 0;
-  flex-shrink: 0;
-  font-size: 1rem;
-  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-  text-decoration: none;
-  transition-duration: 0.15s;
-  transition-property: background;
+  background-color:           rgb(200, 200, 200);
+  border-radius:              0.5rem;
+  border:                     none;
+  color:                      black;
+  cursor:                     pointer;
+  flex-grow:                  0;
+  flex-shrink:                0;
+  font-size:                  1rem;
+  padding:                    0.25rem 0.5rem 0.25rem 0.5rem;
+  text-decoration:            none;
+  transition-duration:        0.15s;
+  transition-property:        background;
   transition-timing-function: ease-in-out;
-  user-select: none;
+  user-select:                none;
 }
 
 button:hover, .button:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
+  background-color:           rgb(255, 255, 255);
+  color:                      black;
 }
 
 .blueButton {
-  background-color: rgb(0, 75, 175);
-  box-shadow: 5px 5px 5px rgb(0, 0, 0);
-  color: white;
+  background-color:           rgb(0, 75, 175);
+  box-shadow:                 5px 5px 5px rgb(0, 0, 0);
+  color:                      white;
 }
 
 .blueButton:hover {
-  background-color: rgb(0, 90, 255);
-  border: none;
-  color: white;
+  background-color:           rgb(0, 90, 255);
+  border:                     none;
+  color:                      white;
 }
 
 .greenButton {
-  background-color: green;
-  box-shadow: 5px 5px 5px rgb(0, 0, 0);
-  color: white;
+  background-color:           green;
+  box-shadow:                 5px 5px 5px rgb(0, 0, 0);
+  color:                      white;
 }
 
 .greenButton:hover {
-  background-color: rgb(0, 150, 50);
-  color: white;
+  background-color:           rgb(0, 150, 50);
+  color:                      white;
 }
 
 .buttonDisabled {
-  background-color: rgb(205, 205, 205) !important;
-  border: 1px solid rgb(150, 150, 150) !important;
-  box-shadow: none  !important;
-  color: rgb(100, 100, 100)  !important;
-  pointer-events: none  !important;
-  user-select: none  !important;
+  background-color:           rgb(205, 205, 205) !important;
+  border:                     1px solid rgb(150, 150, 150) !important;
+  box-shadow:                 none  !important;
+  color:                      rgb(100, 100, 100)  !important;
+  pointer-events:             none  !important;
+  user-select:                none  !important;
 }
 
 .topSection {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem 1rem 0.0 1rem;
-  width: 100%;
+  display:                    flex;
+  flex-direction:             row;
+  padding:                    1rem 1rem 0.0 1rem;
+  width:                      100%;
 }
 
 .topLeftSection {
-  width: 30%;
+  width:                      30%;
 }
 
 .topLeftSectionLogo {
-  aspect-ratio: 1 / 1;
-  width: 3rem;
-  flex-grow: 0;
-  flex-shrink: 0;
+  aspect-ratio:               1 / 1;
+  width:                      3rem;
+  flex-grow:                  0;
+  flex-shrink:                0;
 }
 
 .topCenterSection {
-  flex-grow: 1;
-  flex-shrink: 0;
-  text-align: center;
+  flex-grow:                  1;
+  flex-shrink:                0;
+  text-align:                 center;
 }
 
 .topCenterSectionTitle {
-  font-family: var(--extraLightFont);
-  font-size: 2rem;
+  font-family:                var(--extraLightFont);
+  font-size:                  2rem;
 }
 
 .topCenterSectionSubTitle {
-  font-family: var(--lightFont);
-  font-size: 1rem;
+  font-family:                var(--lightFont);
+  font-size:                  0.9rem;
 }
 
 .topCenterSectionVersion {
-  font-family: var(--lightFont);
-  font-size: 0.8rem;
+  font-family:                var(--lightFont);
+  font-size:                  0.8rem;
 }
 
 .topRightSection {
-  text-align: right;
-  width: 30%;
-}
-
-.topRightSectionDate {
-  font-size: 0.7rem;
+  justify-content:            flex-end;
+  display:                    flex;
+  width:                      30%;
 }
 
 .topDate {
+  font-size:                  0.7rem;
 }
 
 .topLastModDate {
-  color: rgb(100, 100, 100);
+  color:                      rgb(100, 100, 100);
 }
 
 .middleSection {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  overflow: auto;
-  overscroll-behavior: none;   /* stops over pulling on a phone */
-  width: 100%;
+  align-items:                center;
+  display:                    flex;
+  flex-direction:             column;
+  flex-grow:                  1;
+  max-height:                 100%;
+  overscroll-behavior:        none;   /* stops over pulling on a phone */
+  width:                      100%;
 }
 
 .bottomSection {
-  display: flex;
-  flex-direction: row;
-  padding: 0 1rem 0 1rem;
-  width: 100%;
+  display:                    flex;
+  flex-direction:             row;
+  padding:                    0 1rem 0 1rem;
+  width:                      100%;
 }
 
 .bottomLeftSection {
-  width: 33%;
+  width:                      33%;
 }
 
 .bottomCenterSection {
-  flex-grow: 1;
-  flex-shrink: 0;
-  text-align: center;
+  flex-grow:                  1;
+  flex-shrink:                0;
+  text-align:                 center;
 }
 
 .bottomRightSection {
-  text-align: right;
-  width: 33%;
+  text-align:                 right;
+  width:                      33%;
 }
 
 .isNarrow {
-  display:none;
+  display:                    none;
 }
 
 /* detect phone */
 @media screen and (any-pointer: coarse) and (max-width: 900px) {
-  .topCenterSectionSubTitle {display: none;}
-  .topCenterSectionVersion  {display: none;}
-  .isNarrow {display:initial;}
+  .isNarrow {
+    display: initial;
+  }
 }
 
 /* detect phone in portrait */
 @media screen and (any-pointer: coarse) and (orientation: portrait)
     and (max-width: 400px) {
-  pre {font-size: 0.5rem; line-height: 1.0rem;}
-  .topLeftSectionLogo{width: 2rem;}
-  .topCenterSectionTitle {font-size: 1.25rem;}
-
+  pre {
+    font-size: 0.5rem;
+    line-height: 1.0rem;
+  }
+  .topLeftSectionLogo{
+    width: 2rem;
+  }
+  .topCenterSectionTitle {
+    font-size: 1.25rem;
+  }
 }
 
 /* detect phone in landscape */
@@ -321,5 +323,7 @@ button:hover, .button:hover {
     padding-right: max(1rem, env(safe-area-inset-right));
     padding-bottom: max(1rem, env(safe-area-inset-bottom));
   }
-  .middleSection {margin-top: 0.5rem;}
+  .middleSection {
+    margin-top: 0.5rem;
+  }
 }
