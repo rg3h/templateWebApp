@@ -1,79 +1,81 @@
 /** base.css -- resets css and has css common to all pages**/
 
+/********** reset **********/
+
 /* box-sizing: border-box for all elements */
 *, *::before, *::after {
-  box-sizing: border-box;
+  box-sizing:                 border-box;
 }
 
 /* prevent font size inflation on mobile */
 html {
-  -moz-text-size-adjust: 100%;    /* firefox */
-  -ms-text-size-adjust: 100%;     /* older internet explorer/edge */
-  -webkit-text-size-adjust: 100%; /* chrome, safari, newer edge */
-  text-size-adjust: 100%;         /* standard property */
+  -moz-text-size-adjust:      100%;  /* firefox */
+  -ms-text-size-adjust:       100%;  /* older internet explorer/edge */
+  -webkit-text-size-adjust:   100%;  /* chrome, safari, newer edge */
+  text-size-adjust:           100%;  /* standard property */
 }
 
 /* remove default margins (except dialog for centering) */
 :not(dialog) {
-  margin: 0;
+  margin:                     0;
 }
 
 /* better typography */
 body {
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.5;
-  min-height: 100svh;
-  text-rendering: optimizelegibility;
+  -webkit-font-smoothing:     antialiased;
+  line-height:                1.5;
+  min-height:                 100svh;
+  text-rendering:             optimizelegibility;
 }
 
 
 /* balanced text wrapping for headers */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 1rem;
-  overflow-wrap: break-word;
-  text-wrap: balance;
+  margin-top:                 1rem;
+  overflow-wrap:              break-word;
+  text-wrap:                  balance;
 }
 
 p {
-  text-wrap: pretty;
+  text-wrap:                  pretty;
 }
 
-/* media elements: responsive and block-level */
+/* media elements - responsive and block-level */
 img, picture, video, canvas, svg {
-  display: block;
-  height: auto;
-  max-width: 100%;
+  display:                    block;
+  height:                     auto;
+  max-width:                  100%;
 }
 
 /* inherit fonts in form controls */
 input, button, textarea, select {
-  font: inherit;
+  font:                       inherit;
 }
 
 /* ensure textareas have a usable height */
 textarea:not([rows]) {
-  min-height: 10em;
+  min-height:                 10em;
 }
 
 /* remove list styles only for semantic lists */
 ul[role="list"], ol[role="list"] {
-  list-style: none;
-  padding-inline-start: 0; /* logical property for rtl */
+  list-style:                 none;
+  padding-inline-start:       0; /* logical property for rtl */
 }
 
 /* anchors get extra scroll margin */
 :target {
-  scroll-margin-block: 5ex;
+  scroll-margin-block:        5ex;
 }
 
 /* isolation for root */
 #root, #__next {
-  isolation: isolate;
+  isolation:                  isolate;
 }
 
 /* enable smooth size interpolations for animations */
-@media (prefers-reduced-motion: no-preference) {
-  html {scroll-behavior: smooth;}
+@media (prefers-reduced-motion:no-preference) {
+  html {scroll-behavior:      smooth;}
 }
 
 
@@ -94,7 +96,7 @@ ul[role="list"], ol[role="list"] {
   --extraLightFont:           monaSansExtraLight;
   --border:                   solid 1px rgb(200, 200, 200);
   --borderRadius:             1rem;
-
+  --boxShadow:                3px 3px 5px rgba(0, 0, 0, 0.25);
   --extraLightBlue:           rgb(240, 245, 255);
   --blue:                     rgb(  0,  90, 255);
   --steelBlue:                rgb( 10, 100, 190);
@@ -127,6 +129,7 @@ body {
 
 /* anchor */
 a {
+  box-shadow:                 0px 5px 5px transparent;
   text-decoration-thickness:  1px;
   text-underline-offset:      0.33rem;
   transition-duration:        0.2s;
@@ -137,6 +140,7 @@ a {
 
 a:hover {
   color:                      rgb(65, 60, 255);
+  box-shadow:                 var(--boxShadow);
   text-decoration:            underline;
   text-decoration-thickness:  2px;
 }
@@ -144,14 +148,15 @@ a:hover {
 pre {
   font-size:                  0.9rem;
   line-height:                1.2rem;
-  overflow-wrap:              break-word;
-  white-space:                pre-wrap;
+  overflow-wrap:              break-word; /* breaks long words */
+  white-space:                pre-wrap;   /* preserve space & wrap naturally */
 }
 
 button, .button, .blueButton, .greenButton {
   background-color:           rgb(200, 200, 200);
   border-radius:              0.5rem;
   border:                     none;
+  box-shadow:                 var(--boxShadow);
   color:                      black;
   cursor:                     pointer;
   flex-grow:                  0;
@@ -172,7 +177,6 @@ button:hover, .button:hover {
 
 .blueButton {
   background-color:           rgb(0, 75, 175);
-  box-shadow:                 5px 5px 5px rgb(0, 0, 0);
   color:                      white;
 }
 
@@ -184,7 +188,6 @@ button:hover, .button:hover {
 
 .greenButton {
   background-color:           green;
-  box-shadow:                 5px 5px 5px rgb(0, 0, 0);
   color:                      white;
 }
 
@@ -196,10 +199,10 @@ button:hover, .button:hover {
 .buttonDisabled {
   background-color:           rgb(205, 205, 205) !important;
   border:                     1px solid rgb(150, 150, 150) !important;
-  box-shadow:                 none  !important;
+  box-shadow:                 none !important;
   color:                      rgb(100, 100, 100)  !important;
-  pointer-events:             none  !important;
-  user-select:                none  !important;
+  pointer-events:             none !important;
+  user-select:                none !important;
 }
 
 .topSection {
@@ -215,9 +218,9 @@ button:hover, .button:hover {
 
 .topLeftSectionLogo {
   aspect-ratio:               1 / 1;
-  width:                      3rem;
   flex-grow:                  0;
   flex-shrink:                0;
+  width:                      3rem;
 }
 
 .topCenterSection {
@@ -233,7 +236,7 @@ button:hover, .button:hover {
 
 .topCenterSectionSubTitle {
   font-family:                var(--lightFont);
-  font-size:                  0.9rem;
+  font-size:                  1rem;
 }
 
 .topCenterSectionVersion {
@@ -242,13 +245,15 @@ button:hover, .button:hover {
 }
 
 .topRightSection {
-  justify-content:            flex-end;
-  display:                    flex;
+  text-align:                 right;
   width:                      30%;
 }
 
-.topDate {
+.topRightSectionDate {
   font-size:                  0.7rem;
+}
+
+.topDate {
 }
 
 .topLastModDate {
@@ -260,7 +265,7 @@ button:hover, .button:hover {
   display:                    flex;
   flex-direction:             column;
   flex-grow:                  1;
-  max-height:                 100%;
+  overflow:                   auto;
   overscroll-behavior:        none;   /* stops over pulling on a phone */
   width:                      100%;
 }
@@ -293,35 +298,27 @@ button:hover, .button:hover {
 
 /* detect phone */
 @media screen and (any-pointer: coarse) and (max-width: 900px) {
-  .isNarrow {
-    display: initial;
-  }
+  .topCenterSectionSubTitle   {display: none;}
+  .topCenterSectionVersion    {display: none;}
+  .isNarrow                   {display: initial;}
 }
 
 /* detect phone in portrait */
 @media screen and (any-pointer: coarse) and (orientation: portrait)
     and (max-width: 400px) {
-  pre {
-    font-size: 0.5rem;
-    line-height: 1.0rem;
-  }
-  .topLeftSectionLogo{
-    width: 2rem;
-  }
-  .topCenterSectionTitle {
-    font-size: 1.25rem;
-  }
+  pre                         {font-size: 0.5rem; line-height: 1.0rem;}
+  .topLeftSectionLogo         {width: 2rem;}
+  .topCenterSectionTitle      {font-size: 1.25rem;}
+
 }
 
 /* detect phone in landscape */
 @media screen and (any-pointer: coarse) and (orientation: landscape)
     and (max-width: 900px) {
-  body {
-    padding-left:  max(1rem, env(safe-area-inset-left)); /* Apply safe area */
-    padding-right: max(1rem, env(safe-area-inset-right));
-    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  body {                      /* apply safe area */
+    padding-left:             max(1rem, env(safe-area-inset-left));
+    padding-right:            max(1rem, env(safe-area-inset-right));
+    padding-bottom:           max(1rem, env(safe-area-inset-bottom));
   }
-  .middleSection {
-    margin-top: 0.5rem;
-  }
+  .middleSection              {margin-top: 0.5rem;}
 }
